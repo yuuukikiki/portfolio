@@ -1,0 +1,345 @@
+/* ヘッダー */
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 8px rgb(0,0,0,0.06);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(6px);
+}
+.site-catch{
+  font-size: 12px;
+  opacity: 0.8;
+}
+.header-line{
+  background: rgba(79,168,155,0.1);
+  color: #4fa89b;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  text-decoration: none;
+  font-weight: 700;
+}
+.site-name{
+  font-size: 20px;
+  font-style: italic;
+}
+
+/* フッター */
+footer{
+  padding: 40px;
+  background: #eef5f5;
+  border-top: 1px solid rgba(0,0,0,0.05);
+}
+.footer-inner{
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+.footer-note{
+  font-size: 13px;
+  line-height: 1.8;
+  color: #9a8c7a;
+  margin-bottom: 24px;
+}
+.copyright{
+  font-size: 12px;
+  color: #b0a89e;
+}
+
+main{
+  max-width: 560px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+body{
+    font-family: "Zen Maru Gothic", sans-serif;
+  margin: 0;
+  background: linear-gradient(
+    180deg,
+    #f8ffff 0%,
+    #eaffff 100%
+  );
+  color: #7a5a3a;
+  line-height: 2;
+  letter-spacing: 0.09em;
+}
+
+section{
+  padding: 60px 20px;
+}
+
+.container{
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* ファーストビュー-------------------------------------------------------- */
+.first-view{
+  background: #ffffff;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.card-fv{
+  position: relative;
+  border-radius: 20px;
+  padding: 60px 28px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.card-fv::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #ffffff;
+  z-index: 0;
+}
+
+.card-fv::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../img/canaria-fv.jpg");
+  background-size: cover;
+  background-position: 36% center;
+  opacity: 0.18;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.card-fv > *{
+  position: relative;
+  z-index: 2;
+}
+
+.fv-img{
+  padding: 40px 16px;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+}
+
+.section-card{
+  padding: 32px 20px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.section-card > * {
+  position: relative;
+  z-index: 0;
+}
+
+h2{
+  font-size: 30px;
+  line-height: 1.5;
+  margin-bottom: 32px;
+  font-weight: 700;
+  position: relative;
+}
+
+h2::after{
+  content: "";
+  display: none;
+  width: 160px;
+  height: 4px;
+  background: #ff7a7a;
+  margin: 16px auto 0;
+  border-radius: 2px;
+}
+
+.text-small{
+  font-size: 12px;
+}
+
+.lead1{
+  font-size: 24px;
+  font-weight: 700;
+  margin: 32px 0;
+  color: #5a4632;
+}
+
+p{
+  font-size: 16px;
+}
+
+.text-medium{
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.cta-note{
+  font-size: 12px;
+  opacity: 0.7;
+  text-align: center;
+  margin-top: -20px;
+}
+
+/* 全CTAボタン---------------------------------------------------- */
+.cta{
+  display: block;
+  margin: 48px auto 40px;
+  padding: 18px 24px;
+  max-width: 340px;
+  text-align: center;
+  background: linear-gradient(180deg,#ff8a8a,#ff5c5c);
+  color: #ffffff;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.cta-button{
+  position: relative;
+  z-index: 3;
+}
+
+.cta:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25);
+}
+
+/* セクションworry---------------------------------------------------------- */
+.worry-area{
+  position: relative;
+  text-align: center;
+  background: #f6fbfb;
+}
+
+.worry-area h2{
+  font-size: 32px;
+}
+
+.worry-area ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card-worry.content{
+  z-index: 2;
+}
+
+.not-worry{
+  padding: 40px 20px;
+}
+
+.card-worry li{
+  background: #ffffff;
+  padding: 14px 18px;
+  margin-bottom: 14px;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.05);
+}
+
+.card-worry.content strong{
+  display: inline-block;
+  min-width: 2.5em;
+  color: #5a4632;
+}
+
+/* -セクションflow 相談の流れ-------------------------------------------------- */
+.flow-area{
+  background: #ffffff;
+}
+
+.section-card.flow{
+  text-align: center;
+}
+.flow ul{
+  list-style: none;
+  padding: 0;
+}
+
+.flow li{
+  background: #f9ffff;
+  padding: 18px;
+  border-radius: 14px;
+  margin-bottom: 16px;
+  box-shadow: 0 6px 14px rgb(0,0,0,0.05);
+}
+
+/* セクション院内写真，医師写真 ------------------------------------------------*/
+.clinic{
+  background: #f6fbfb;
+}
+
+.clinic-inner{
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.clinic-inner img{
+  width: 100%;
+  border-radius: 16px;
+  display: block;
+}
+
+/* セクション経歴 ------------------------------------------------------------*/
+.career{
+  background: #ffffff;
+  text-align: center;
+}
+
+/* セクション料金------------------------------------------------------------- */
+.price{
+  background: #f6fbfb;
+}
+
+/* セクション実績 -------------------------------------------------------------*/
+.trust{
+  background: #ffffff;
+  text-align: center;
+}
+
+.positive{
+  font-size: 20px;
+}
+
+/* セクションラストプッシュ----------------------------------------------------- */
+.last-push{
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #f9e8e8 100%
+  );
+  font-size: 18px;
+  text-align: center;
+  margin-top: 20px;
+  padding: 80px 20px;
+  position: relative;
+  border-radius: 12px;
+}
+
+.last-push::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../img/heart.png");
+  background-size: 220px;
+  background-repeat: no-repeat;
+  background-position: center 70%;
+  opacity: 0.08;
+  pointer-events: none;
+}
+
+/* セクションラストメッセージ--------------------------------------------------- */
+.last-message{
+  background: #f6f6f6;
+  text-align: center;
+}
